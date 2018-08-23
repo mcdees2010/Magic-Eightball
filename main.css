@@ -1,0 +1,12 @@
+body{
+    margin: 0;
+    text-align: center;
+}
+
+.container {
+    height: 500px;
+    width: 500px;
+    background-color: black;
+    margin: 0 auto;
+    border-radius: 250px;
+}
