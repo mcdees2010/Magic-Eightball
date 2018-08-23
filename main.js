@@ -1,9 +1,26 @@
 console.log("JS Loaded");
 
 
-document.getElementById("myForm").addEventListener("submit", myFunction);
+var form = document.getElementById("myForm").addEventListener("submit", myFunction);
 
-function myFunction() {
-    alert("Your answer was submitted");
+var answerQuestions =
+    ["yes, definitely!",
+    "Outlook Good",
+    "Sorry, Try Again",
+    "My reply is no",
+    "Most Likely",
+    "Ask again later"]
+
+function myFunction(e) {
+    e.preventDefault(); // prevents the behavior of forms to defaul pages
+    console.log("Your answer was submitted");
+    var responses = answerQuestions[Math.floor(Math.random() * answerQuestions.length)];
+    console.log(responses);
 }
 
+
+// if(form === ""){
+  
+// }else{
+//     alert(responses);
+// }
