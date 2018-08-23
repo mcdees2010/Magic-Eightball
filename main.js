@@ -18,4 +18,5 @@ function myFunction(e) {
     console.log("Your answer was submitted");
     var responses = answerQuestions[Math.floor(Math.random() * answerQuestions.length)];
     generateAnswer.innerText = responses;
+    e.target[0].value = ""; //makes the space clear after
 }
