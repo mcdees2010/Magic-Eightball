@@ -9,4 +9,19 @@ body{
     background-color: black;
     margin: 0 auto;
     border-radius: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.number {
+    margin: 0 auto;
+    height: 150px;
+    width: 150px;
+    background-color: white;
+    border-radius: 75px;
+    font-size: 75px;
+    font-weight: bold;
+    line-height: 150px;
 }
