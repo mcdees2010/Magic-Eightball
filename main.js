@@ -3,6 +3,8 @@ console.log("JS Loaded");
 
 var form = document.getElementById("myForm").addEventListener("submit", myFunction);
 
+var generateAnswer = document.querySelector(".answer");
+
 var answerQuestions =
     ["yes, definitely!",
     "Outlook Good",
@@ -15,12 +17,5 @@ function myFunction(e) {
     e.preventDefault(); // prevents the behavior of forms to defaul pages
     console.log("Your answer was submitted");
     var responses = answerQuestions[Math.floor(Math.random() * answerQuestions.length)];
-    console.log(responses);
+    generateAnswer.innerText = responses;
 }
-
-
-// if(form === ""){
-  
-// }else{
-//     alert(responses);
-// }
